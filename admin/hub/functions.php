@@ -39,7 +39,7 @@ function addUser(){
 		$image_tmp 	= 	$_FILES['image']['tmp_name'];
 
 		$phone 		= $_POST['phone'];
-		$password 	= $_POST['password'];
+		$password 	= md5($_POST['password']);
 		$role 		= $_POST['role'];
 		$status 	= $_POST['status'];
 
@@ -95,7 +95,7 @@ function updateUser(){
 		$email = $_POST['email'];
 		$image = $_POST['image'];
 		$phone = $_POST['phone'];
-		$password = $_POST['password'];
+		$password = md5($_POST['password']);
 		$role = $_POST['role'];
 		$status = $_POST['status'];
 

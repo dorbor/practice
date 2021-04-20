@@ -7,12 +7,11 @@ function login(){
 	global $con;
 
 
-
 	if (isset($_POST['loginBtn'])) {
 		
 		$email = $_POST['email'];
-		// $pass  = md5($_POST['password']);
-		$pass  = $_POST['password'];
+		$pass  = md5($_POST['password']);
+		//$pass  = $_POST['password'];
 
 		// echo $email . " " . $pass;
 
